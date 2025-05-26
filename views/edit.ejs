@@ -1,0 +1,8 @@
+<section class="form-section">
+  <h2>Edit Post</h2>
+  <form action="/edit/<%= index %>" method="POST" class="post-form">
+    <input type="text" name="title" value="<%= post.title %>" required />
+    <textarea name="content" rows="10" required><%= post.content %></textarea>
+    <button type="submit">Update</button>
+  </form>
+</section>

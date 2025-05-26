@@ -1,0 +1,12 @@
+<article class="single-post">
+  <h2><%= post.title %></h2>
+  <p><%- post.content %></p>  <!-- Note the <%- %> here -->
+  <div class="post-actions">
+    <a href="/edit/<%= index %>" class="btn-edit">Edit</a>
+    <form action="/delete/<%= index %>" method="POST" class="inline-form">
+      <button type="submit" class="btn-delete">Delete</button>
+    </form>
+  </div>
+</article>
+
+

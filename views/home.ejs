@@ -1,0 +1,13 @@
+<section class="posts">
+  <% if (posts.length === 0) { %>
+    <p>No posts yet. <a href="/compose">Create one!</a></p>
+  <% } %>
+
+  <% posts.forEach((post, index) => { %>
+  <div class="post-card">
+    <h2><a href="/posts/<%= index %>"><%= post.title %></a></h2>
+  </div>
+  <% }); %>
+
+
+</section>
